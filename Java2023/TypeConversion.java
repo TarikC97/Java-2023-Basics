@@ -14,7 +14,8 @@ class Proba {
         System.out.println(rez);
 
         //++num; - PreIncrement, num++; - PostIncrement;
-        //int x=5;int y=6; boolean rez = x>5 => println(rez)
+        //int x=5;int y=6; boolean rez = x>5 => println(rez)//Relational Operators(>,==,<)
+        //Logical Operators(&&,||,!)
     }
 
 }
