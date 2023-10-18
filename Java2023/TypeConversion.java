@@ -16,6 +16,7 @@ class Proba {
         //++num; - PreIncrement, num++; - PostIncrement;
         //int x=5;int y=6; boolean rez = x>5 => println(rez)//Relational Operators(>,==,<)
         //Logical Operators(&&,||,!)
+        //Conditional Statements (If,Else)
     }
 
 }
