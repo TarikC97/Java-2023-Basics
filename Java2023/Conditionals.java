@@ -1,5 +1,4 @@
   class Conditional{      
-    
         public static void main(String args[]){   
         //++num; - PreIncrement, num++; - PostIncrement;
         //Relational Operators(>,==,<)
@@ -30,7 +29,7 @@
         //     }   
         // }
         //Switch new 
-        String day = "Monday";
+        String day = "Sunday";
         String result ="";
         result = switch(day){
             case "Saturday","Sunday" -> "6am";
