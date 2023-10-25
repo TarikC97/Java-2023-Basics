@@ -17,7 +17,7 @@ class Loop {
         // Since i is declared outside of the loop, value will be maintained
         System.out.println("After" + i);
 
-        // Do While Loop
+        //Do While Loop
         int p = 5;
         do {
             System.out.println("Do While" + p);
