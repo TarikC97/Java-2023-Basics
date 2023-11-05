@@ -1,3 +1,10 @@
+class Student {
+    int num;
+    String name;
+    int grades;
+
+}
+
 class Arrays {
     public static void main(String args[]) {
         // int nums[] = { 5, 6, 7 };
@@ -30,6 +37,7 @@ class Arrays {
         // System.out.println();
         // }
         // 2. Enhanced loop - Multi Dimensional Arrays
+        // int multi[][] = new int[3][4];
         // for (int n[] : multi) {
         // for (int m : n) {
         // m = (int) (Math.random() * 10);
@@ -37,6 +45,22 @@ class Arrays {
         // }
         // System.out.println();
         // }
-        // Array Setbacks
+        // Array of Objects
+        Student s1 = new Student();
+        s1.grades = 7;
+        s1.name = "TarikC";
+        s1.num = 1;
+        Student s2 = new Student();
+        s2.grades = 8;
+        s2.name = "HarisZ";
+        s2.num = 2;
+        // Creating array that can hold 3 objects.
+        Student students[] = new Student[2];
+        students[0] = s1;
+        students[1] = s2;
+        // Enhanced For Loop(foreach)
+        for (Student student : students) {
+            System.out.println(student.name + "=" + student.grades);
+        }
     }
 }
