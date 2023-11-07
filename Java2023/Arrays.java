@@ -54,7 +54,7 @@ class Arrays {
         s2.grades = 8;
         s2.name = "HarisZ";
         s2.num = 2;
-        // Creating array that can hold 3 objects.
+        // Creating array that can hold 2 objects.
         Student students[] = new Student[2];
         students[0] = s1;
         students[1] = s2;
