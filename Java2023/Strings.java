@@ -27,8 +27,8 @@ public class Strings {
         sb.insert(2, "m");
         sb.setLength(15);
         System.out.println(sb);
-        String str = sb.toString();
-        // StringBuilder one diff, not thread save
-        
+        // String str = sb.toString();
+        // StringBuilder one diff, not thread safe
+
     }
 }
