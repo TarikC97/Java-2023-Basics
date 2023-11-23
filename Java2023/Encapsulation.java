@@ -3,10 +3,15 @@ class Human {
     private int age;
     private String name;
 
-    public Human() {
+    public Human() {// Default Const
         System.out.println("Constructor");
         age = 15;
         name = "Proba";
+    }
+
+    public Human(int age, String name) {// Parameterized Const
+        this.age = age;
+        this.name = name;
     }
 
     public int getAge() {
@@ -31,10 +36,12 @@ class Human {
 public class Encapsulation {
     public static void main(String[] args) {
         Human obj = new Human();
+        Human obj2 = new Human(25, "Tarik");
         // By default null values for unsigned values for variables.
         System.out.println(obj.getName() + ":" + obj.getAge());
-        obj.setAge(25);
-        obj.setName("Tarik");
+        System.out.println(obj2.getName() + ":" + obj2.getAge());
+        // obj.setAge(25);
+        // obj.setName("Tarik");
         // System.out.println(obj.getName() + ":" + obj.getAge());
     }
 }
