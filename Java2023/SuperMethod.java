@@ -29,5 +29,6 @@ public class SuperMethod {
         // B obj = new B(5);
         B obj = new B(5);
     }
-
 }
+//Naming convention
+    //Camel casing
