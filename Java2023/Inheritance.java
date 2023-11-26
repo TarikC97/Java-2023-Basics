@@ -9,6 +9,7 @@ class Calc {
     }
 }
 
+// SingleLEvelInheritance
 // SubClass
 class AdvCalc extends Calc {
     public int multi(int a, int b) {
@@ -20,11 +21,19 @@ class AdvCalc extends Calc {
     }
 }
 
+// Multi level Inheritance
+class VeryAdvCalc extends AdvCalc {
+    public double pow(int a, int b) {
+        return Math.pow(a, b);
+    }
+}
+
 public class Inheritance {
     public static void main(String[] args) {
-        AdvCalc obj = new AdvCalc();
+        VeryAdvCalc obj = new VeryAdvCalc();
         int c1 = obj.add(5, 5);
         int c2 = obj.division(10, 5);
-        System.out.println(c1 + ":" + c2);
+        double c3 = obj.pow(5, 2);
+        System.out.println(c1 + ":" + c2 + ":" + c3);
     }
 }
