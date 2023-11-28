@@ -1,4 +1,6 @@
+package tools;
 //SuperClass
+
 // class Calc {
 //     public int add(int a, int b) {
 //         return a + b;
@@ -46,7 +48,8 @@ class B extends A {
 }
 // Java DOesn't support Mulltiple Inheritance
 // class C extends A,B {
-// }
+// }int c = obj.show(5, 4);
+// System.out.println(c);
 
 public class Inheritance {
     public static void main(String[] args) {
