@@ -28,6 +28,18 @@ class VeryAdvCalc extends AdvCalc {
     }
 }
 
+class A {
+
+}
+
+class B {
+
+}
+// Java DOesn't support Mulltiple Inheritance
+// class C extends A,B {
+
+// }
+
 public class Inheritance {
     public static void main(String[] args) {
         VeryAdvCalc obj = new VeryAdvCalc();
