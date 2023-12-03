@@ -29,13 +29,24 @@ interface Ap {
     void config();
 }
 
-class Bp implements Ap {
+interface Cp {
+    void run();
+}
+
+interface Dp extends Cp {
+}
+
+class Bp implements Ap, Dp {
     public void show() {
         System.out.println("Show");
     }
 
     public void config() {
         System.out.println("Config");
+    }
+
+    public void run() {
+        System.out.println("Run");
     }
 }
 
