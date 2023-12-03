@@ -20,35 +20,45 @@
 //         comp.code();
 //     }
 // }
-interface Ap {
-    int age = 25;// Final and Static variables
-    String name = "TC";
+// interface Ap {
+//     int age = 25;// Final and Static variables
+//     String name = "TC";
 
+//     void show();
+
+//     void config();
+// }
+
+// interface Cp {
+//     void run();
+// }
+
+// interface Dp extends Cp {
+// }
+
+// class Bp implements Ap, Dp {
+//     public void show() {
+//         System.out.println("Show");
+//     }
+
+//     public void config() {
+//         System.out.println("Config");
+//     }
+
+//     public void run() {
+//         System.out.println("Run");
+//     }
+// }
+@FunctionalInterface
+interface F {
     void show();
-
-    void config();
 }
 
-interface Cp {
-    void run();
-}
-
-interface Dp extends Cp {
-}
-
-class Bp implements Ap, Dp {
-    public void show() {
-        System.out.println("Show");
-    }
-
-    public void config() {
-        System.out.println("Config");
-    }
-
-    public void run() {
-        System.out.println("Run");
-    }
-}
+// class FB implements F {
+// public void show() {
+// System.out.println("Show FB");
+// }
+// }
 
 public class Interface {
     public static void main(String[] args) {
@@ -56,9 +66,17 @@ public class Interface {
         // Computer desk = new Desktop();
         // Dev tc = new Dev();
         // tc.devApp(lapD);
-        Ap obj = new Bp();
-        obj.config();
+        // Ap obj = new Bp();
+        // obj.config();
+        // obj.show();
+        // System.out.println(Ap.name);
+        // Functional Interface
+        F obj = new F() {
+            public void show() {
+                System.out.println("Show F Inteface");
+            }
+        };
         obj.show();
-        System.out.println(Ap.name);
+
     }
 }
