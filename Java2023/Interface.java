@@ -78,6 +78,8 @@ public class Interface {
         F obj = (b, c) -> b + c;
         int d = obj.add(5, 5);
         System.out.println(d);
+        // Type of Interfaces
+        // Normal, Functional, Marker
 
     }
 }
