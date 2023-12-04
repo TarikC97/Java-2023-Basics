@@ -51,7 +51,9 @@
 // }
 @FunctionalInterface
 interface F {
-    void show();
+    // void show();
+    // void show(int a);
+    int add(int b, int c);
 }
 
 // class FB implements F {
@@ -71,12 +73,11 @@ public class Interface {
         // obj.show();
         // System.out.println(Ap.name);
         // Functional Interface
-        F obj = new F() {
-            public void show() {
-                System.out.println("Show F Inteface");
-            }
-        };
-        obj.show();
+        // Lambda Expressions
+        // You don't need to mention variable type
+        F obj = (b, c) -> b + c;
+        int d = obj.add(5, 5);
+        System.out.println(d);
 
     }
 }
