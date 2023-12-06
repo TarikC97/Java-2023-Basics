@@ -1,3 +1,10 @@
+//Custom Exception
+class CustomException extends Exception {
+    public CustomException(String string) {
+
+    }
+}
+
 public class Exceptions {
     public static void main(String[] args) {
         // Compile time error
@@ -37,7 +44,7 @@ public class Exceptions {
             j = 18 / i;
             // Calling catch if j = 0
             if (j == 0)
-                throw new ArithmeticException("I dont wan't zero!");
+                throw new CustomException("I dont wan't zero!");
         } catch (ArithmeticException obj) {
             // Exception Handling
             j = 18 / 1;
@@ -47,5 +54,6 @@ public class Exceptions {
         }
         System.out.println(j);
         System.out.println("Test");
+        // Custom Exception
     }
 }
