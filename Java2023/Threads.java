@@ -1,6 +1,6 @@
 class T extends Thread {
     public void run() {
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 40; i++) {
             System.out.println("Threads");
         }
 
@@ -9,7 +9,7 @@ class T extends Thread {
 
 class Q extends Thread {
     public void run() {
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 40; i++) {
             System.out.println("Multi Threads ");
         }
 
