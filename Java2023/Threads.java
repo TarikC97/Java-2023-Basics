@@ -21,6 +21,7 @@ public class Threads {
     public static void main(String[] args) {
         T obj = new T();
         Q obj2 = new Q();
+        System.out.println(obj.getPriority());
         obj.start();
         obj2.start();
 
