@@ -19,7 +19,7 @@ public class Main {
         // int c = obj.show(5, 4);
         // System.out.println(c);
         // D obj1 = new D();
-        A obj = new A();
+        // A obj = new A();
         // System.out.println(obj.marks);
     }
 }

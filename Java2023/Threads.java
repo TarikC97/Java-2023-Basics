@@ -24,6 +24,7 @@
 class CounterT {
     int count;
 
+    // Solving Race conditions issue
     // synchronized solves output for threads,
     // by making one thread wait for first one to finish the call
     // for method, then other one starts.
@@ -65,7 +66,6 @@ public class Threads {
         // Asking Main Thread to wait for t1 and t2
         t1.join();
         t2.join();
-        // Race conditions
         System.out.println(coun.count);
     }
 }

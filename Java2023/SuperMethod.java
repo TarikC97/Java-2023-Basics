@@ -39,7 +39,7 @@ public class SuperMethod {
         new A().show();
         new A().show();
         // Reference creation
-        A obj;
+        // A obj;
         // A obj = new A();
         // obj.show();
     }

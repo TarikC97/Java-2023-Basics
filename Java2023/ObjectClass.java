@@ -47,7 +47,7 @@ public class ObjectClass {
         int num = 5;
         Integer num1 = num;
         System.out.println(num1);
-        int num2 = num1.intValue();
+        // int num2 = num1.intValue();
         String str = "15";
         int num3 = Integer.parseInt(str);
         System.out.println(num3 * 12);
