@@ -6,8 +6,13 @@ import java.util.Comparator;
 public class ComparatorandComparable {
     public static void main(String[] args) {
         Comparator<Integer> comp = new Comparator<Integer>() {
-            public int compare(int i, int j) {
-                return 5;
+            public int compare(Integer i, Integer j) {
+                // if i > j , swap them
+                if (i % 10 > j % 10) {
+                    return 1;
+                    // if i< j don't swap
+                } else
+                    return -1;
             }
         };
         List<Integer> arr = new ArrayList<>();
