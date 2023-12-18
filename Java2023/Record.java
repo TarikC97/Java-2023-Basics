@@ -52,12 +52,12 @@
 
 //}
 record AlienR(int id, String name) {
-    public AlienR() {
-        // Setting defualt value for default constructor
-        // if(id ==0)
-        // throw new IllegalArgumentException("Id can't be zero");
-        // this(0, "");
-    }
+    // public AlienR() {
+    // // Setting defualt value for default constructor
+    // // if(id ==0)
+    // // throw new IllegalArgumentException("Id can't be zero");
+    // // this(0, "");
+    // }
 }
 
 public class Record {
