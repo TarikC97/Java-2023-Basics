@@ -54,16 +54,21 @@
 record AlienR(int id, String name) {
     // public AlienR() {
     // // Setting defualt value for default constructor
-    // // if(id ==0)
-    // // throw new IllegalArgumentException("Id can't be zero");
-    // // this(0, "");
+    // this(0, "");
     // }
+
+    // Compact Canonical constructor
+    public AlienR {
+        if (id == 0)
+            throw new IllegalArgumentException("Id can't be zero");
+    }
 }
 
 public class Record {
     public static void main(String[] args) {
-        AlienR obj = new AlienR(25, "Tc");
+        AlienR obj = new AlienR(0, "Tc");
         AlienR obj2 = new AlienR(25, "Tc");
+        // System.out.println(obj.name());
         System.out.println(obj.equals(obj2));
         // AlienR obj3 = new AlienR();
     }
